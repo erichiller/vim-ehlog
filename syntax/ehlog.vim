@@ -16,6 +16,7 @@ let b:current_syntax = "ehlog"
 
 
 
+
 syn match clang ".*\[C\].*$"
 syn match clang ".*C\..*$"
 
@@ -32,8 +33,12 @@ syn match errors ".*WARN.*$"
 syn match errors ".*ERROR.*$"
 syn match errors ".*CRITICAL.*$"
 
-syn region functionalBlock start=".*START.*$" end=".*END.*$" contains
+" CAN KEYWORD BE A MORE THAN ONE CONSECUTIVE?
+" ADD README?
+syn match event ".*EVENT.*$"
 
+
+" syn region functionalBlock start=".*START.*$" end=".*END.*$" contains=base keepend
 
 
 

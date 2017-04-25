@@ -25,6 +25,7 @@ hi app          guifg=black     guibg=#20b2aa   gui=NONE " light sea green
 hi object       guifg=black   guibg=#ffc0cb	gui=NONE " pink
 
 hi errors       guifg=black     guibg=#ff0000 gui=BOLD "bright red
+hi event       guifg=green     guibg=purple gui=BOLD "bright red
 
 hi functionalBlock guifg=blue guibg=bg gui=NONE
 
