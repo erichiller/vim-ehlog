@@ -11,20 +11,22 @@ let b:undo_ftplugin = "setl fo< com< cms<"
 " setlocal comments=s1:/*,mb:*,ex:*/,://
 " setlocal commentstring=//\ %s
 
+setlocal shiftwidth=1
+setlocal foldlevel=0
+setlocal foldmethod=indent
+setlocal foldignore=
+setlocal foldcolumn=2
 " setlocal noexpandtab
 setlocal nospell
 setlocal ro " make these read only (by default)
-" setlocal colorscheme ehlog
 
-" noremap <F12> <Esc>:syntax sync fromstart<CR>
-" inoremap <F12> <C-o>:syntax sync fromstart<CR>
-" function! Sameids_repeat(mode)
-"   let matches = getmatches()
-"   if empty(matches)
-"     return
-"   endif
-"   let cur_offset = go#util#OffsetCursor()
-" endfunction
+
+" to compare two things side by side, these are the two greatest options EVER
+setlocal scrollbind
+setlocal cursorbind
+
+noremap <F11> <Esc>:LineBreakAt ,<CR>
+inoremap <F12> <C-o>:LineBreakAt ,<CR>
 
 noremap <F12> <Esc>:call RefreshEhlog()<CR>
 inoremap <F12> <C-o>:call RefreshEhlog()<CR>
